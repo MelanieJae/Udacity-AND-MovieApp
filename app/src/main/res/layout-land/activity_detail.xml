@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            style="@style/UITextViewToLeftOfImage"
+            android:id="@+id/title"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/UITextViewToLeftOfImage"
+            android:id="@+id/release_year"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_below="@id/title"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/UITextViewToLeftOfImage"
+            android:id="@+id/vote_average"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_below="@id/release_year"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/movie_poster"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"
+            android:layout_width="200dp"
+            android:layout_height="180dp" />
+
+        <TextView
+            style="@style/UITextViewBelowImage"
+            android:id="@+id/plot_synopsis"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/vote_average"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</ScrollView>
