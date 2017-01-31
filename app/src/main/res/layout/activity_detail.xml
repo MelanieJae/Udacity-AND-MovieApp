@@ -2,156 +2,34 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:background="#ffffff"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".DetailActivity">
-
+    android:layout_height="wrap_content">
     <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/detail_toolbar"
+            android:minHeight="?android:attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="TITLE"
+            android:background="@color/colorPrimary">
+            <TextView
+                android:theme="@style/ToolbarText"
+                android:id="@+id/detail_toolbar_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                tools:text="TITLE"/>
+        </android.support.v7.widget.Toolbar>
+        <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-        <!--<android.support.v7.widget.Toolbar-->
-            <!--android:id="@+id/toolbar"-->
-            <!--android:minHeight="?attr/actionBarSize"-->
-            <!--android:background="#2196F3"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content">-->
-        <!--</android.support.v7.widget.Toolbar>-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <ImageView
-                android:id="@+id/movie_poster"
-                android:src="@drawable/cinema_icon"
-                android:textStyle="bold"
-                android:layout_marginLeft="10dp"
-                android:layout_width="150dp"
-                android:layout_height="150dp" />
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/release_year"
-                    tools:text="2015"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:textStyle="bold"
-                    android:layout_centerHorizontal="true"
-                    tools:textSize="22sp"
-                    android:layout_alignParentTop="true"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:id="@+id/runtime"
-                    android:textStyle="bold|italic"
-                    android:textSize="22sp"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginLeft="10dp"
-                    android:layout_toRightOf="@id/movie_poster"
-                    android:layout_below="@id/release_year"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:id="@+id/vote_average"
-                    tools:text="8/10"
-                    android:textSize="22sp"
-                    android:textStyle="bold"
-                    android:layout_toRightOf="@id/movie_poster"
-                    android:layout_marginLeft="10dp"
-                    android:layout_below="@id/runtime"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-                <TextView
-                    android:id="@+id/add_favorite_text"
-                    android:layout_alignLeft="@id/vote_average"
-                    tools:textSize="22sp"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/vote_average"
-                    android:text="@string/add_favorite"/>
-
-                <ToggleButton
-                    android:id="@+id/favorite_toggle"
-                    android:src="@drawable/ic_toggle"
-                    android:focusable="false"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="right"
-                    android:background="@android:color/transparent"/>
-            </LinearLayout>
-        </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:color="@android:color/darker_gray"/>
-        <TextView
-            android:id="@+id/plot_synopsis"
-            tools:text="Plot Synopsis: movie"
-            android:textSize="26sp"
-            android:layout_marginBottom="10dp"
-            android:textStyle="bold"
-            android:layout_marginLeft="10dp"
-            android:layout_below="@id/movie_poster"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent" />
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:color="@android:color/darker_gray"/>
-
-        <!-- videos section -->
-        <android.support.v7.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/videos_list_recyclerview"/>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/video_list_emptyview"
-            android:orientation="vertical">
-            <ImageView
-                android:id="@+id/video_emptyview_image"
-                android:src="@drawable/cinema_icon"
-                android:layout_width="80dp"
-                android:layout_height="80dp"/>
-            <TextView
-                android:id="@+id/video_emptyview_text"
-                android:src="@string/no_videos_available"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tools:text="NO VIDEO AVAILABLE"/>
-        </LinearLayout>
-
-        <!-- reviews section -->
-        <android.support.v7.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/reviews_list_recyclerview"/>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/review_list_emptyview"
-            android:orientation="vertical">
-            <ImageView
-                android:id="@+id/review_emptyview_image"
-                android:src="@drawable/cinema_icon"
-                android:layout_width="80dp"
-                android:layout_height="80dp"/>
-            <TextView
-                android:id="@+id/review_emptyview_text"
-                android:text="@string/no_reviews_available"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tools:text="NO REVIEWS AVAILABLE"/>
-        </LinearLayout>
+        android:background="#ffffff"
+        android:id="@+id/detail_recycler_view"/>
     </LinearLayout>
 </ScrollView>
+

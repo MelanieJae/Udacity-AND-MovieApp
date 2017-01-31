@@ -5,17 +5,17 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:orientation="horizontal">
         <ImageView
             android:id="@+id/movie_poster"
-            android:textStyle="bold"
+            android:layout_marginTop="6dp"
             android:layout_marginLeft="10dp"
-            android:layout_width="150dp"
-            android:layout_height="150dp" />
+            android:layout_width="120dp"
+            android:layout_height="200dp" />
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -24,10 +24,9 @@
                 android:id="@+id/release_year"
                 tools:text="2015"
                 android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
-                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
                 android:layout_centerHorizontal="true"
-                tools:textSize="22sp"
+                android:textSize="28sp"
                 android:layout_alignParentTop="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -35,9 +34,9 @@
             <TextView
                 android:id="@+id/runtime"
                 android:textStyle="bold|italic"
-                android:textSize="22sp"
+                android:textSize="26sp"
                 android:layout_centerHorizontal="true"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="20dp"
                 android:layout_toRightOf="@id/movie_poster"
                 android:layout_below="@id/release_year"
                 android:layout_width="wrap_content"
@@ -46,45 +45,56 @@
             <TextView
                 android:id="@+id/vote_average"
                 tools:text="8/10"
-                android:textSize="22sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 android:layout_toRightOf="@id/movie_poster"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="20dp"
                 android:layout_below="@id/runtime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
+            <ImageButton
+                android:id="@+id/favorite_toggle"
+                android:src="@drawable/ic_toggle"
+                android:focusable="false"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:background="@android:color/transparent"/>
             <TextView
                 android:id="@+id/add_favorite_text"
                 android:layout_alignLeft="@id/vote_average"
                 tools:textSize="22sp"
                 android:textStyle="bold"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="15dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/vote_average"
                 android:text="@string/add_favorite"/>
-
-            <ImageButton
-                android:id="@+id/favorite_toggle"
-                android:src="@drawable/ic_toggle"
-                android:focusable="false"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="right"
-                android:background="@android:color/transparent"/>
         </LinearLayout>
     </LinearLayout>
     <TextView
         android:id="@+id/plot_synopsis"
-        tools:textSize="22sp"
-        android:textStyle="bold"
+        tools:textSize="24sp"
         android:layout_marginLeft="10dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/detail_recycler_view"
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/detail_recycler_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"/>-->
+    <TextView
+        android:id="@+id/videos_heading"
+        android:text="@string/videos_heading"
+        android:textSize="22sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
     <!-- videos section -->
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
@@ -132,3 +142,4 @@
     <!--</LinearLayout>-->
 
 </LinearLayout>
+

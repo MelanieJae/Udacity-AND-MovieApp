@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <item android:state_checked="false"
-        android:drawable="@drawable/ic_star_border_black_48dp" />
-
-    <item android:state_checked="true"
-        android:drawable="@drawable/ic_star_black_48dp" />
-
+    <item android:state_pressed="true"
+        android:id="@+id/favorite_toggle_on"
+        android:drawable="@drawable/ic_star_black_48dp" /> <!-- pressed -->
+    <item android:state_focused="true"
+        android:drawable="@drawable/ic_star_black_48dp" /> <!-- focused -->
+    <item android:drawable="@drawable/ic_star_border_black_48dp"
+        android:id="@+id/favorite_toggle_off" /> <!-- default -->
 </selector>
+
+
