@@ -1,0 +1,115 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Video recyclerview layout -->
+    <dimen name="video_rv_horizontal_margin_iv">10dp</dimen>
+    <dimen name="video_rv_vertical_margin_iv">10dp</dimen>
+
+    <dimen name="video_rv_horizontal_margin_tv">35dp</dimen>
+    <dimen name="video_rv_vertical_margin_tv">25dp</dimen>
+
+    <!-- Review recyclerview layout -->
+    <dimen name="review_rv_vertical_margin_contenttv">15dp</dimen>
+    <dimen name="review_rv_horizontal_margin_contenttv">10dp</dimen>
+    <dimen name="review_rv_text_size">16sp</dimen>
+
+    <dimen name="review_rv_vertical_margin_authortv">6dp</dimen>
+    <dimen name="review_rv_horizontal_margin_authortv">10dp</dimen>
+
+    <!--&lt;!&ndash; Movie detail recyclerview layout &ndash;&gt;-->
+    <!--<dimen name="activity_horizontal_margin">16dp</dimen>-->
+    <!--<dimen name="activity_horizontal_margin">16dp</dimen>-->
+
+    <!-- Detail activity layout -->
+    <dimen name="detail_rv_horizontal_margin">10dp</dimen>
+    <dimen name="detail_rv_vertical_margin">16dp</dimen>
+
+    <dimen name="toolbar_layout_height">100dp</dimen>
+
+    <dimen name="detail_emptyview_vertical_margin">20dp</dimen>
+    <dimen name="detail_emptyview_iv_layout_width">200dp</dimen>
+    <dimen name="detail_emptyview_iv_layout_height">200dp</dimen>
+
+    <dimen name="poster_iv_horizontal_margin">6dp</dimen>
+    <dimen name="poster_iv_vertical_margin">10dp</dimen>
+    <dimen name="poster_iv_layout_width">120dp</dimen>
+    <dimen name="poster_iv_layout_height">200dp</dimen>
+
+    <dimen name="release_year_tv_horizontal_margin">20dp</dimen>
+    <dimen name="release_year_tv_text_size">28sp</dimen>
+
+    <dimen name="runtime_tv_horizontal_margin">20dp</dimen>
+    <dimen name="runtime_tv_text_size">26sp</dimen>
+
+    <dimen name="vote_avg_tv_horizontal_margin">20dp</dimen>
+    <dimen name="vote_avg_tv_text_size">18sp</dimen>
+
+    <dimen name="favorite_toggle_horizontal_margin">25dp</dimen>
+    <dimen name="favorite_toggle_vertical_margin">20dp</dimen>
+
+    <dimen name="add_fav_tv_horizontal_margin">15dp</dimen>
+    <dimen name="add_fav_tv_text_size">22sp</dimen>
+
+    <dimen name="plot_synopsis_horizontal_margin">10dp</dimen>
+    <dimen name="plot_synopsis_vertical_margin">10dp</dimen>
+    <dimen name="plot_synopsis_tv_text_size">18sp</dimen>
+
+    <dimen name="section_divider_horizontal_margin">10dp</dimen>
+    <dimen name="section_divider_vertical_margin">10dp</dimen>
+    <dimen name="section_divider_layout_height">2dp</dimen>
+
+    <dimen name="videos_heading_horizontal_margin">10dp</dimen>
+    <dimen name="videos_heading_vertical_margin">10dp</dimen>
+    <dimen name="videos_heading_tv_text_size">22sp</dimen>
+
+    <dimen name="reviews_heading_horizontal_margin">10dp</dimen>
+    <dimen name="reviews_heading_vertical_margin">10dp</dimen>
+    <dimen name="reviews_heading_tv_text_size">22sp</dimen>
+
+    <dimen name="reviewslist_rv_vertical_margin">10dp</dimen>
+
+    <!-- Main activity layout -->
+    <dimen name="main_activity_horizontal_margin">16dp</dimen>
+    <dimen name="main_activity_vertical_margin">16dp</dimen>
+
+    <dimen name="logo_iv_vertical_margin">10dp</dimen>
+    <dimen name="logo_iv_layout_width">80dp</dimen>
+    <dimen name="logo_iv_layout_height">80dp</dimen>
+
+    <dimen name="tmdb_string_tv_layout_width">180dp</dimen>
+    <dimen name="tmdb_string_tv_text_size">20sp</dimen>
+
+    <dimen name="inst_tv_vertical_margin_top">130dp</dimen>
+    <dimen name="inst_tv_vertical_margin_bottom">32dp</dimen>
+    <dimen name="inst_tv_text_size">20sp</dimen>
+
+    <dimen name="tmdb_string_tv_layout_width_land">200dp</dimen>
+    <dimen name="tmdb_string_tv_text_size_land">22sp</dimen>
+
+    <dimen name="inst_tv_vertical_margin_top_land">40dp</dimen>
+    <dimen name="inst_tv_vertical_margin_bottom_land">32dp</dimen>
+    <dimen name="inst_tv_text_size_land">22sp</dimen>
+
+    <!-- Favorites activity layout -->
+    <dimen name="emptyview_fv_width_iv">200dp</dimen>
+    <dimen name="emptyview_fv_height_iv">200dp</dimen>
+    <dimen name="emptyview_fv_vertical_margin_iv">20dp</dimen>
+
+    <!-- Search results activity layout -->
+    <dimen name="search_results_activity_horizontal_margin">16dp</dimen>
+    <dimen name="search_results_activity_vertical_margin">16dp</dimen>
+
+    <dimen name="emptyview_vertical_margin">20dp</dimen>
+    <dimen name="emptyview_iv_layout_width">200dp</dimen>
+    <dimen name="emptyview_iv_layout_height">200dp</dimen>
+
+    <!-- Results grid recyclerview layout -->
+    <dimen name="resultsgrid_rv_layout_height_iv">250dp</dimen>
+    <dimen name="resultsgrid_land_rv_layout_width_iv">250dp</dimen>
+
+    <!-- Favorites grid recyclerview layout -->
+    <dimen name="favoritesgrid_rv_layout_width_iv">200dp</dimen>
+    <dimen name="favoritesgrid_rv_layout_height_iv">200dp</dimen>
+</resources>

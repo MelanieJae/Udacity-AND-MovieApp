@@ -1,0 +1,99 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+    <style name="AppThemeDetailActivity" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ToolbarText" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:layout_alignBottom">@id/detail_toolbar</item>
+    </style>
+
+    <style name="EmptyViewText">
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="EmptyTextViewBlackBG" parent="EmptyViewText">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="EmptyTextViewWhiteBG" parent="EmptyViewText">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="EmptyViewFavsButton">
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="MainActivityLogoView">
+        <item name="android:layout_marginTop">@dimen/logo_iv_vertical_margin</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="MainActivityTMDBString">
+        <item name="android:layout_marginTop">@dimen/activity_vertical_margin</item>
+        <item name="android:layout_marginBottom">@dimen/activity_vertical_margin</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:textSize">@dimen/tmdb_string_tv_text_size</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MainActivityTMDBStringPort" parent="MainActivityTMDBString">
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">gravity</item>
+    </style>
+
+    <style name="MainActivityInstTextViewPort">
+        <item name="android:layout_marginBottom">@dimen/inst_tv_vertical_margin_bottom</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginTop">@dimen/inst_tv_vertical_margin_top</item>
+        <item name="android:text">@dimen/inst_tv_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/inst_tv_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MainActivityInstTextViewLand">
+        <item name="android:layout_marginBottom">@dimen/inst_tv_vertical_margin_bottom_land</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginTop">@dimen/inst_tv_vertical_margin_top_land</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/inst_tv_text_size_land</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DetailActivityEmptyImageView">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/detail_emptyview_vertical_margin</item>
+    </style>
+</resources>
